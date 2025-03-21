@@ -1,38 +1,22 @@
 import React from 'react';
 import Timeline from '../components/timeline'
-
+import Carousel from '../components/carousel';
 const ConferenceWebsite = () => {
   return (
     // <div className="bg-red-500">Home</div>
     <div className="font-sans">
 
+      <Carousel />
       {/* About Section */}
-      <section className="py-16">
+      <section className="py-0">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <div className="flex flex-col xl:flex-row gap-8 items-center">
-                <div className="md:w-1/2">
-                  <p className="text-black text-lg leading-relaxed">
-                    Corporate Connect is an industry-academia interaction event
-                    hosted by IIT Ropar that provides a platform to industry
-                    leaders, renowned academics, and ambitious students to
-                    foster meaningful connections, facilitate knowledge-sharing,
-                    and inspire innovative approaches to tackle the challenges of
-                    today’s dynamic industrial landscape.
-                    Today’s corporations are global, complex, and interconnected,
-                    crossing domains, cultures, and technologies. In this era,
-                    success isn’t about being a 'jack of all trades' or a 'master of
-                    one'—it’s about becoming a master of many. The modern
-                    engineer or innovator must blend expertise across disciplines,
-                    from mechanics to AI, to truly thrive.
-                  </p>
-                  <div className="mt-6">
-                  </div>
-                </div>
+
 
                 {/* Right column - Image Collage */}
-                <div className="md:w-1/2 grid grid-cols-2 gap-2 relative mr-2">
+                {/* <div className="md:w-1/2 grid grid-cols-2 gap-2 relative mr-2">
                   <img
                     src="/images/1.png"
                     alt="Festival performer"
@@ -54,7 +38,7 @@ const ConferenceWebsite = () => {
                     alt="Festival performer"
                     className="w-full h-40 object-cover rounded-lg shadow-md translate-x-[10%] md:translate-x-1/2"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="md:w-1/2 md:pl-10">

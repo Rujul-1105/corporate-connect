@@ -43,7 +43,7 @@ const timelineData = [
 function Timeline() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative px-6 py-10"
+      className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative px-6 py-10 border-b-2 border-white"
       style={{
         backgroundImage: `url('/images/spiral_backdrop.jpg')`
       }}
@@ -55,7 +55,7 @@ function Timeline() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center text-white mb-12">
-          Our Engagement Timeline
+          Our Objectives of Corporate Connect
         </h2>
 
         {/* Timeline Wrapper */}
