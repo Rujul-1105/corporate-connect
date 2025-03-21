@@ -8,11 +8,12 @@ const Carousel = () => {
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center bg-cover  bg-no-repeat bg-center relative px-6 py-10 border-b-2 border-white"
-      style={{ backgroundImage: 'url("/images/backdrop_c1.png")' }}
+    // style={{ backgroundImage: 'url("/images/backdrop_c1.png")' }}
     >
       {/* Text Section */}
-      <div className="bg-white/20 backdrop-blur-md ">
-        <div className="w-80% text-white p-6  order-1 my-5">
+      <div className="bg-blue/5 backdrop-blur-md ">
+      <div className='text-center  text-3xl'>Corporate Connect 3.0</div>
+        <div className="w-80% text-blue-900 p-6  order-1 my-5">
           <p className="text-l leading-relaxed">
             Corporate Connect is an industry-academia interaction event
             hosted by IIT Ropar that provides a platform to industry
@@ -42,7 +43,7 @@ const Carousel = () => {
           </p>
         </div>
         {/* Glassmorphic Carousel Container */}
-        <div className="max-w-8xl w-7xl p-6 rounded-xl shadow-lg order-2 m-auto">
+        <div className="max-w-8xl w-7xl p-6 rounded-xl order-2 m-auto">
 
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
