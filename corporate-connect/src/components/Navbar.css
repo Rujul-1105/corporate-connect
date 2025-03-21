@@ -1,0 +1,52 @@
+.main{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 80px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 2px;
+    align-items: center;
+    /* gap: 30vw; */
+}
+
+.main>*{
+    /* border: 2px solid black; */
+}
+
+.logocc, .logoiit{
+    display: flex;
+    align-items: center;
+}
+
+.logoccimg{
+    height: 80px;
+}
+
+
+.logoiitimg{
+    height: 80px;
+    filter: invert(1);
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.5;
+    align-items: center;
+}
+
+.links>div{
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links>div:hover{
+    background-color: red;
+}
+
+.links>*{
+    /* border: 1px solid purple; */
+}
