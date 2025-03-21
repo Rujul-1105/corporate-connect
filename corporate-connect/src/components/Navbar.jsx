@@ -1,6 +1,6 @@
 import React from 'react'
-import logocc from '../assets/logocc2.png'
-import logoiit from '../assets/logoiit2.png'
+import logocc from '../assets/logocc.png'
+import logoiit from '../assets/logoiit.png'
 
 const Navbar = () => {
   return (
