@@ -44,9 +44,10 @@
 }
 
 .links>div:hover{
-    background-color: red;
+    background-color: rgba(82, 174, 255, 0.605);
 }
 
-.links>*{
-    /* border: 1px solid purple; */
+.links>*:hover{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
 }
