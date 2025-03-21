@@ -30,8 +30,8 @@ const events = [
 
 const MajorEvents = () => {
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-5xl font-bold text-center text-black mb-12">
+    <div className="container mx-auto p-6 mb-5">
+      <h1 className="text-4xl font-bold text-center text-black mb-12">
         Major Events
       </h1>
       <div className="grid gap-10 grid-cols-2">
@@ -42,10 +42,10 @@ const MajorEvents = () => {
           >
             <span className="text-3xl mr-4">{event.icon}</span>
             <div>
-              <h2 className="text-3xl font-semibold text-blue-500 mb-2">
+              <h2 className="text-2xl font-semibold text-blue-500 mb-2">
                 {event.title}
               </h2>
-              <p className="text-gray-700 text-xl">{event.description}</p>
+              <p className="text-gray-700 text-lg">{event.description}</p>
             </div>
           </div>
         ))}
