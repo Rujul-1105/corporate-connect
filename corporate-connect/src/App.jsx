@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {Router} from 'react-router-dom'
 import {Routes, Route} from 'react-router-dom' 
+import Home from './pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,3 +19,5 @@ function App() {
 }
 
 export default App
+
+
