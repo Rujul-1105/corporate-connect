@@ -1,6 +1,9 @@
 import React from 'react';
 import Timeline from '../components/timeline'
 import Carousel from '../components/carousel';
+import MajorEvents from '../components/majorEvents';
+import Footer from '../components/Footer1';
+
 const ConferenceWebsite = () => {
   return (
     <div className="font-sans">
@@ -23,6 +26,10 @@ const ConferenceWebsite = () => {
       </section>
 
       <Timeline />
+
+      <MajorEvents/>
+
+      <Footer/>
     </div>
   );
 };
