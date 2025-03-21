@@ -1,12 +1,11 @@
+
 .main{
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    padding-left: 80px;
-    background-color: aliceblue;
-    border-radius: 5px;
-    margin: 2px;
+    /* padding: 10px; */
+    /* padding-left: 80px; */
+    background-color: rgb(180, 213, 241);
     align-items: center;
     /* gap: 30vw; */
 }
