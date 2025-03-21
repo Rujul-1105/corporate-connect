@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {Router} from 'react-router-dom'
 import {Routes, Route} from 'react-router-dom' 
+import Home from './pages/Home'
 
 import Navbar from "./components/Navbar.jsx"
 import "./components/Navbar.css"
@@ -19,3 +20,5 @@ function App() {
 }
 
 export default App
+
+
