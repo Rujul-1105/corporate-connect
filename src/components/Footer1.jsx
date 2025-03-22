@@ -54,14 +54,14 @@ export default function Footer() {
         </div>
       </div>
 
-        {/* Social Media Links */}
+        
 
         <div className="mt-6 flex justify-center space-x-4">
           <a href="https://in.linkedin.com/school/placementcelliitropar/" className="text-gray-400 hover:text-blue-500"><FaLinkedin size={20} /></a>
           <a href="mailto:ug.placement@iitrpr.ac.in" className="text-gray-400 hover:text-blue-500"><FaMailBulk size={20} /></a>
           <a href="#" className="text-gray-400 hover:text-blue-500"><FaInstagram size={20} /></a>
         </div>
-      {/* Footer Bottom */}
+      
       <div className="mt-6 text-center text-sm text-gray-500">© 2025 IIT ROPAR. All Rights Reserved.</div>
     </footer>
   );
