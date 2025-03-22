@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="links flex flex-row gap-4">
             <div><a href="/vc">Visiting companies</a></div>
             <div><a href="#">Gallery</a></div>
-            <div><a href="#">Contact Us</a></div>
+            <div><a href="/contactus">Contact Us</a></div>
           </div>
           <a href="#"><img className='logoiitimg' src={logoiit} alt="logoiit" /></a>
           {/* <div className="logoiit"></div> */}
