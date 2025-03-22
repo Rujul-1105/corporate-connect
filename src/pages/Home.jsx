@@ -3,6 +3,7 @@ import Timeline from '../components/timeline'
 import Carousel from '../components/carousel';
 import MajorEvents from '../components/majorEvents';
 import Footer from '../components/Footer1';
+import Slideshow from '../components/CarouselCompany';
 
 const ConferenceWebsite = () => {
   return (
@@ -28,8 +29,11 @@ const ConferenceWebsite = () => {
       <Timeline />
 
       <MajorEvents/>
+      
+      <Slideshow />
 
       <Footer/>
+
     </div>
   );
 };
