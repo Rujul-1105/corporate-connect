@@ -9,11 +9,11 @@ export default function Footer() {
           <div>
             <img src={logoiit} alt="IIT Bombay Logo" className="w-64 mb-4 mt-10" />
             <h2 className="text-2xl font-bold text-white mb-2">Indian Institute of Technology Ropar</h2>
-            {/* <p className="text-sm mt-2">CDPC</p> */}
+            
             <p className="text-sm">Location : Admin, IIT ROPAR, Rupnagar,Punjab - 140001,India</p>
           </div>
 
-          {/* Contact Information */}
+          
           <div className='flex flex-row gap-50'>
               <div>
               <h3 className="text-lg font-bold text-white">Contact Us</h3>
@@ -41,14 +41,14 @@ export default function Footer() {
         </div>
       </div>
 
-        {/* Social Media Links */}
+        
 
         <div className="mt-6 flex justify-center space-x-4">
           <a href="#" className="text-gray-400 hover:text-blue-500"><FaLinkedin size={20} /></a>
           <a href="#" className="text-gray-400 hover:text-blue-500"><FaFacebook size={20} /></a>
           <a href="#" className="text-gray-400 hover:text-blue-500"><FaTwitter size={20} /></a>
         </div>
-      {/* Footer Bottom */}
+      
       <div className="mt-6 text-center text-sm text-gray-500">© 2025 IIT ROPAR. All Rights Reserved.</div>
     </footer>
   );
