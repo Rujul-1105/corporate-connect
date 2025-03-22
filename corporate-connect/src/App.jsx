@@ -8,6 +8,7 @@ import Home from './pages/Home'
 
 import Navbar from "./components/Navbar.jsx"
 import "./components/Navbar.css"
+import Contactus from "./Contactus.jsx"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,13 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Contactus/>
+      <div className="faculty">
+        <div className="fhead">Faculty</div>
+        <div className="fimages">
+          
+        </div>
+      </div>
     </>
   )
 }

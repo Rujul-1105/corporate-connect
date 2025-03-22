@@ -1,0 +1,13 @@
+.section .heading {
+    text-align: center;
+    /* border: 2px solid black; */
+    font-size:xx-large;
+}
+
+.faculty-images{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+    /* border: 2px solid red; */
+    width: 80vw;
+}
