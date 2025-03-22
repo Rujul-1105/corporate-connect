@@ -8,12 +8,12 @@ import '../components/carousel.css';
 const Carousel = () => {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center  relative px-6 py-10 border-b-2 border-white bg1"
+      className="min-h-screen flex flex-col items-center justify-center  relative px-6 py-10 border-b-2 border-white"
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
     >
       {/* Text Section */}
-      <div className="bg-blue/5 backdrop-blur-md bg1">
-      <div className='pt-5 pl-5 text-5xl'>Corporate Connect 3.0</div>
+      <div className="bg-blue/5 backdrop-blur-md">
+      <div className='pt-5 pl-5 text-5xl text-center bg2'>Corporate Connect 3.0</div>
         <div className="w-80% text-blue-950 p-3 justify-center flex flex-row items-center order-1 my-5">
         <p className="text-xl leading-relaxed" style={{ textAlign: "justify" }}>
             Corporate Connect is an industry-academia interaction event

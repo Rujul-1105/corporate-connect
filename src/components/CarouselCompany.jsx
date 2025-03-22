@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import '../components/carousel.css';
+import { div } from "framer-motion/client";
 
 const images = [
-  { src: "./images/1.png", alt: "Image 1" },
-  { src: "./images/2.png", alt: "Image 2" },
-  { src: "./images/3.png", alt: "Image 3" },
-  { src: "./images/4.png", alt: "Image 4" },
-  { src: "./images/5.png", alt: "Image 5" },
-  { src: "./images/6.png", alt: "Image 6" },
-  { src: "./images/7.png", alt: "Image 7" },
-  { src: "./images/8.png", alt: "Image 8" },
-  { src: "./images/9.png", alt: "Image 9" },
-  { src: "./images/10.png", alt: "Image 10" }
+  { src: "./images/c1.png", alt: "Image 1" },
+  { src: "./images/c2.png", alt: "Image 2" },
+  { src: "./images/c3.png", alt: "Image 3" },
+  { src: "./images/c4.png", alt: "Image 4" },
+  { src: "./images/c5.png", alt: "Image 5" },
+  { src: "./images/c6.png", alt: "Image 6" },
+  { src: "./images/c7.png", alt: "Image 7" },
+  { src: "./images/c8.png", alt: "Image 8" },
+  { src: "./images/c9.png", alt: "Image 9" },
 ];
 
 const itemsPerPage = 6;
@@ -28,7 +28,13 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center overflow-hidden bg1">
+    <div className="flex items-center justify-center overflow-hidden pt-10 pb-10">
+      <div className='flex flex-col'>
+      <div className='text-center text-4xl mb-4 font-bold'>
+        Previous Visitors
+      </div>
+      <div>
+
       <div className="relative w-[1200px] overflow-hidden">
         <motion.div
           className="flex"
@@ -53,6 +59,8 @@ const Carousel = () => {
             </div>
           ))}
         </motion.div>
+      </div>
+      </div>
       </div>
     </div>
   );

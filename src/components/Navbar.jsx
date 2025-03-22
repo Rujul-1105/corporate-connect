@@ -10,10 +10,10 @@ const Navbar = () => {
         <div className='flex flex-row gap-10'>
           <div className="links flex flex-row gap-4">
             <div><a href="/vc">Visiting companies</a></div>
-            <div><a href="#">Gallery</a></div>
-            <div><a href="#">Contact Us</a></div>
+            <div><a href="https://drive.google.com/file/d/1kPFeXRsWo8vE6p54lo-_8Vs3GAVJ95-B/view?usp=drivesdk">Download Brochure</a></div>
+            <div><a href="/contactus">Contact Us</a></div>
           </div>
-          <a href="#"><img className='logoiitimg' src={logoiit} alt="logoiit" /></a>
+          <a href="/"><img className='logoiitimg' src={logoiit} alt="logoiit" /></a>
           {/* <div className="logoiit"></div> */}
         </div>
       </div>
