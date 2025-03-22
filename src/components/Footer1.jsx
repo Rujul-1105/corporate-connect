@@ -7,7 +7,7 @@ export default function Footer() {
       <div className='flex flex-row gap-50'>
         <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <img src={logoiit} alt="IIT Bombay Logo" className="w-64 mb-4 mt-10" />
+            <img src={logoiit} alt="IIT Ropar Logo" className="w-64 mb-4 mt-10" />
             <h2 className="text-2xl font-bold text-white mb-2">Indian Institute of Technology Ropar</h2>
             {/* <p className="text-sm mt-2">CDPC</p> */}
             <p className="text-sm">Location : Admin, IIT ROPAR, Rupnagar,Punjab - 140001,India</p>
@@ -21,7 +21,7 @@ export default function Footer() {
               <p className="text-sm">✉ Email: <a href="mailto:dean.acr.office@iitropar.org" className="text-blue-400 hover:underline">dean.acr.office@iitropar.org</a></p>
               <div className="mt-4">
                 <h4 className="text-md font-semibold mb-5 mt-10">Faculty In-Charge</h4>
-                <img src='./images/tharamani.jpeg' alt="Faculty In-Charge" className="w-32 h-32 rounded-full mb-2" />
+                {/* <img src='./images/tharamani.jpeg' alt="Faculty In-Charge" className="w-32 h-32 rounded-full mb-2" /> */}
                 <p className="text-sm">Dr. Tharamani C.N.</p>
                 <p className="text-sm">📞 +91 82838 40769</p>
                 <p className="text-sm">✉ <a href="mailto:tharamani@iitpr.ac.in" className="text-blue-400 hover:underline">tharamani@iitpr.ac.in</a></p>
@@ -30,10 +30,10 @@ export default function Footer() {
 
             <div className="mt-4">
               <h4 className="text-lg font-bold text-white">Organizers</h4>
-              <img src="./images/hardik.jpeg" alt="Organizer" className="w-24 h-24 rounded-full mb-2 mt-6" />
+              {/* <img src="./images/hardik.jpeg" alt="Organizer" className="w-24 h-24 rounded-full mb-2 mt-6" /> */}
               <p className="text-sm"><strong>Nikhil Garg</strong> - 📞 +91 63780 10128</p>
               <p className="text-sm mb-5">✉ <a href="mailto:2021csb1114@iitrpr.ac.in" className="text-blue-400 hover:underline">2021csb1114@iitrpr.ac.in</a></p>
-              <img src="./images/nikhil.jpeg" alt="Organizer" className="w-24 h-24 rounded-full mb-2" />
+              {/* <img src="./images/nikhil.jpeg" alt="Organizer" className="w-24 h-24 rounded-full mb-2" /> */}
               <p className="text-sm mt-2"><strong>Hardik Ajit</strong> - 📞 +91 90043 50656</p>
               <p className="text-sm">✉ <a href="mailto:2022meb1312@iitrpr.ac.in" className="text-blue-400 hover:underline">2022meb1312@iitrpr.ac.in</a></p>
             </div>

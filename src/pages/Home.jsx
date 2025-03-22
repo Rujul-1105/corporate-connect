@@ -7,7 +7,8 @@ import Slideshow from '../components/CarouselCompany';
 
 const ConferenceWebsite = () => {
   return (
-    <div className="font-sans">
+    <div className="font-sans ">
+      <div>
 
       <Carousel />
       {/* About Section */}
@@ -29,10 +30,11 @@ const ConferenceWebsite = () => {
       <Timeline />
 
       <MajorEvents/>
-      
+
       <Slideshow />
 
       <Footer/>
+      </div>
 
     </div>
   );

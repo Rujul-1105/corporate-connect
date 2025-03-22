@@ -5,7 +5,8 @@
     justify-content: space-between;
     /* padding: 10px; */
     /* padding-left: 80px; */
-    background-color: rgb(180, 213, 241);
+    background-color: #01263e;
+    color:white;
     align-items: center;
     /* gap: 30vw; */
 }
@@ -27,7 +28,7 @@
 
 .logoiitimg{
     height: 80px;
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
 .links{

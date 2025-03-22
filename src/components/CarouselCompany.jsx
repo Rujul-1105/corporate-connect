@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import '../components/carousel.css';
 
 const images = [
   { src: "./images/1.png", alt: "Image 1" },
@@ -27,7 +28,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center mb-6 overflow-hidden">
+    <div className="flex items-center justify-center overflow-hidden bg1">
       <div className="relative w-[1200px] overflow-hidden">
         <motion.div
           className="flex"
