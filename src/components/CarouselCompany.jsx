@@ -44,7 +44,7 @@ const Carousel = () => {
               <motion.img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-60 object-cover rounded-lg"
+                className="w-full h-60 object-cover rounded-lg m-5"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}

@@ -12,8 +12,8 @@ const Carousel = () => {
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
     >
       {/* Text Section */}
-      <div className="bg-blue/5 backdrop-blur-md bg1">
-      <div className='pt-5 pl-5 text-5xl'>Corporate Connect 3.0</div>
+      <div className="bg-blue/10 backdrop-blur-md">
+      <div className='pt-5 pl-5 text-5xl text-center '>Corporate Connect 3.0</div>
         <div className="w-80% text-blue-950 p-3 justify-center flex flex-row items-center order-1 my-5">
         <p className="text-xl leading-relaxed" style={{ textAlign: "justify" }}>
             Corporate Connect is an industry-academia interaction event
