@@ -10,26 +10,20 @@ export default function Footer() {
           <div>
             <img src={cdpc} alt="IIT Ropar Logo" className="w-52 mb-4 mt-5" />
             <h2 className="text-2xl font-bold text-white mb-2">CDPC,IIT Ropar</h2>
-            {/* <p className="text-sm mt-2">CDPC</p> */}
             <p className="text-sm">Location : Admin, IIT ROPAR, Rupnagar,Punjab - 140001,India</p>
           </div>
 
-          {/* Contact Information */}
           <div>
               <h3 className="text-xl font-bold text-white mt-5">Contact Us</h3>
               <div className='flex flex-row gap-10'>
-              {/* <p className="text-sm mt-2">📞 <strong>IIT ROPAR:</strong> +91 22-2576-4889, 2576-7023</p> */}
-              {/* <p className="text-sm">✉ Email: <a href="mailto:dean.acr.office@iitropar.org" className="text-blue-400 hover:underline">dean.acr.office@iitropar.org</a></p> */}
               <div className="mt-4">
                 <h4 className="text-md font-semibold mb-2 mt-2">Dean CEOA</h4>
-                {/* <img src='./images/tharamani.jpeg' alt="Faculty In-Charge" className="w-32 h-32 rounded-full mb-2" /> */}
                 <p className="text-sm">Dr. Sarang P. Gumfekar</p>
                 <p className="text-sm">📞 +91 76200 63191</p>
                 <p className="text-sm">✉ <a href="mailto:tharamani@iitpr.ac.in" className="text-blue-400 hover:underline">deanceoa@iitrpr.ac.in</a></p>
               </div>
               <div className="mt-4">
                 <h4 className="text-md font-semibold mb-2 mt-2">Faculty In-Charge</h4>
-                {/* <img src='./images/tharamani.jpeg' alt="Faculty In-Charge" className="w-32 h-32 rounded-full mb-2" /> */}
                 <p className="text-sm">Dr. Tharamani C.N.</p>
                 <p className="text-sm">📞 +91 82838 40769</p>
                 <p className="text-sm">✉ <a href="mailto:tharamani@iitpr.ac.in" className="text-blue-400 hover:underline">chair.cdp@iitpr.ac.in</a></p>

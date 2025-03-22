@@ -33,7 +33,7 @@ const ConferenceWebsite = () => {
 
       <Slideshow />
 
-      <Footer/>
+      {/* <Footer/> */}
       </div>
 
     </div>

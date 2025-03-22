@@ -11,7 +11,7 @@ import "./components/Navbar.css"
 
 import Footer from './components/Footer1.jsx';
 
-import VisitingCProfile from './pages/visitingcprofile';
+import VisitingCProfile1 from './pages/visitingcprofile';
 import VisitingCProfile2 from './pages/visitingcprofile2';
 import VisitingCProfile3 from './pages/visitingcprofile3';
 import VisitingCProfile4 from './pages/visitingcprofile4';
@@ -30,7 +30,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<><Home /><Footer /></>} />
-        <Route path='/visiting-profile' element={<><VisitingCProfile /><Footer /></>} />
+        <Route path='/visiting-profile1' element={<><VisitingCProfile1 /><Footer /></>} />
         <Route path='/visiting-profile2' element={<><VisitingCProfile2 /><Footer /></>} />
         <Route path='/visiting-profile3' element={<><VisitingCProfile3 /><Footer /></>} />
         <Route path='/visiting-profile4' element={<><VisitingCProfile4 /><Footer /></>} />

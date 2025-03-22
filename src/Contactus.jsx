@@ -9,8 +9,8 @@ function ContactPage() {
   return (
     <div className="contact-container">
       <Faculty />
-      <OrganizingTeam />
       <DFR />
+      <OrganizingTeam />
     </div>
   );
 }
