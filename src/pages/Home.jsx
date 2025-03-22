@@ -3,10 +3,12 @@ import Timeline from '../components/timeline'
 import Carousel from '../components/carousel';
 import MajorEvents from '../components/majorEvents';
 import Footer from '../components/Footer1';
+import Slideshow from '../components/CarouselCompany';
 
 const ConferenceWebsite = () => {
   return (
-    <div className="font-sans">
+    <div className="font-sans ">
+      <div>
 
       <Carousel />
       {/* About Section */}
@@ -29,7 +31,11 @@ const ConferenceWebsite = () => {
 
       <MajorEvents/>
 
+      <Slideshow />
+
       <Footer/>
+      </div>
+
     </div>
   );
 };

@@ -30,7 +30,7 @@ const events = [
 
 const MajorEvents = () => {
   return (
-    <div className="container mx-auto p-6 mb-5">
+    <div className="container w-[100%] bg1">
       <h1 className="text-4xl font-bold text-center text-black mb-12">
         Major Events
       </h1>

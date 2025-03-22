@@ -1,10 +1,16 @@
-import { useState } from 'react';
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Navbar from './components/Navbar.jsx';
+import { useState } from 'react'
+import './App.css'
+import { Router } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Vc from './pages/vc'
+import Contactus from './Contactus'
+
+import Navbar from "./components/Navbar.jsx"
+import "./components/Navbar.css"
+
 import Footer from './components/Footer1.jsx';
-import './components/Navbar.css';
+
 import VisitingCProfile from './pages/visitingcprofile';
 import VisitingCProfile2 from './pages/visitingcprofile2';
 import VisitingCProfile3 from './pages/visitingcprofile3';
@@ -34,6 +40,8 @@ function App() {
         <Route path='/visiting-profile8' element={<><VisitingCProfile8 /><Footer /></>} />
         <Route path='/visiting-profile9' element={<><VisitingCProfile9 /><Footer /></>} />
         <Route path='/visiting-profile10' element={<><VisitingCProfile10 /><Footer /></>} />
+        <Route path='/vc' element={<Vc />}></Route>
+        <Route path='/contactus' element={<Contactus />}></Route>
       </Routes>
     </>
   );

@@ -3,18 +3,19 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '../components/carousel.css';
 
 const Carousel = () => {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover  bg-no-repeat bg-center relative px-6 py-10 border-b-2 border-white"
-    // style={{ backgroundImage: 'url("/images/backdrop_c1.png")' }}
+      className="min-h-screen flex flex-col items-center justify-center  relative px-6 py-10 border-b-2 border-white bg1"
+      style={{ fontFamily: '"Times New Roman", Times, serif' }}
     >
       {/* Text Section */}
-      <div className="bg-blue/5 backdrop-blur-md ">
-      <div className='text-center  text-3xl'>Corporate Connect 3.0</div>
-        <div className="w-80% text-blue-900 p-6  order-1 my-5">
-          <p className="text-l leading-relaxed">
+      <div className="bg-blue/10 backdrop-blur-md">
+      <div className='pt-5 pl-5 text-5xl text-center '>Corporate Connect 3.0</div>
+        <div className="w-80% text-blue-950 p-3 justify-center flex flex-row items-center order-1 my-5">
+        <p className="text-xl leading-relaxed" style={{ textAlign: "justify" }}>
             Corporate Connect is an industry-academia interaction event
             hosted by IIT Ropar that provides a platform to industry
             leaders, renowned academics, and ambitious students to
