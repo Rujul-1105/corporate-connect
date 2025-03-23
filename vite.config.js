@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [react(),
   tailwindcss(),
   ],
+  server: {
+    historyApiFallback: true, // Helps in development
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
