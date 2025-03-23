@@ -2,17 +2,17 @@ import React from 'react'
 import '../components/vct.css'
 import { div } from 'framer-motion/client'
 
-const vct = () => {
+const vct = (prop) => {
   return (
 
     <div className="card">
       <div className="company-photo">
-        <img src="../../public/images/backdrop_c1.png" alt="" srcset="" />
+        <img src={prop.pic} alt="" srcset="" />
       </div>
       <div className="details">
-        <h2>Company Name</h2>
-        <p>Designation</p>
-        <p>Company Description</p>
+        <h2>{prop.c_name}</h2>
+        <p>{prop.desig}</p>
+        <p>{prop.desc}</p>
       </div>
     </div>
 
