@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.main12{
+  display:flex;
+}
+
+* {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .bd1{
+    height:100vh;
+    width:100vw;
+    display:none;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .bd11 {
+      display:none;
+    }
+
+    .bd1{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      font-size:50px;
+      background-color:black;
+      color:white;
+      text-align: center;
+    /* font:bolder; */
+    }
+  }

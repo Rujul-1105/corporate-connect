@@ -1,0 +1,17 @@
+.section .heading {
+    text-align: center;
+    /* border: 2px solid black; */
+    font-size:xx-large;
+}
+
+.organizing-team-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-row{
+    display: flex;
+    width: 80vw;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+}
