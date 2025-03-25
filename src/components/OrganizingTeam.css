@@ -7,6 +7,7 @@
 .organizing-team-images{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .image-row{
@@ -14,4 +15,12 @@
     width: 80vw;
     /* border: 2px solid red; */
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
 }

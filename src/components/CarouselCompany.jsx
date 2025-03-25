@@ -15,12 +15,38 @@ const images = [
   { src: "./images/c10.png", alt: "Image 10" },
 ];
 
-const itemsPerPage = 6;
-const totalSlides = images.length - itemsPerPage + 1;
-
 const Carousel = () => {
+  // Determine itemsPerPage based on window width:
+  // Mobile (<480px): 1 image per slide,
+  // Medium (<768px): 3 images per slide,
+  // Otherwise: 6 images per slide.
+  const getItemsPerPage = () => {
+    if (window.innerWidth < 480) {
+      return 1;
+    } else if (window.innerWidth < 768) {
+      return 3;
+    } else {
+      return 6;
+    }
+  };
+
+  const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage());
   const [index, setIndex] = useState(0);
 
+  // Update itemsPerPage on window resize.
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerPage(getItemsPerPage());
+      setIndex(0); // Reset slide index on resize, if necessary.
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Compute totalSlides based on itemsPerPage.
+  const totalSlides = images.length - itemsPerPage + 1;
+
+  // Memoize images array.
   const memoizedImages = useMemo(() => images, []);
 
   useEffect(() => {
@@ -28,7 +54,7 @@ const Carousel = () => {
       setIndex((prevIndex) => (prevIndex + 1) % totalSlides);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [totalSlides]);
 
   return (
     <div className="flex items-center justify-center overflow-hidden pt-10 pb-10">
@@ -41,12 +67,21 @@ const Carousel = () => {
             className="flex"
             animate={{ x: `-${index * (100 / itemsPerPage)}%` }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            style={{ width: `${(memoizedImages.length / itemsPerPage) * 100}%`, display: "flex" }}
+            // keep full length of images
+            style={{
+              width: `${
+                window.innerWidth < 480
+                  ? (memoizedImages.length / itemsPerPage) * 150
+                  : (memoizedImages.length / itemsPerPage) * 100
+              }%`,
+              display: "flex",
+            }}
           >
-            {memoizedImages.map((image, i) => (
+            {memoizedImages.map((image) => (
               <div
                 key={image.src}
-                className="w-[12.75%] flex-shrink-0 px-1"
+                className="carousel-item px-1"
+                style={{ flex: `0 0 ${100 / itemsPerPage}%` }}
               >
                 <motion.img
                   src={image.src}

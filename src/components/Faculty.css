@@ -10,4 +10,13 @@
     /* gap: 20px; */
     /* border: 2px solid red; */
     width: 80vw;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .faculty-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }

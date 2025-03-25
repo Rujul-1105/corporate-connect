@@ -1,54 +1,177 @@
-
-.main{
-    /* border: 2px solid red; */
+.main {
     display: flex;
     justify-content: space-between;
-    /* padding: 10px; */
-    /* padding-left: 80px; */
     background-color: #01263e;
-    color:white;
+    color: white;
     align-items: center;
-    /* gap: 30vw; */
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
-.main>*{
-    /* border: 2px solid black; */
-}
-
-.logocc, .logoiit{
+.logocc, .logoiit {
     display: flex;
     align-items: center;
 }
 
-.logoccimg{
+.logoccimg {
     height: 80px;
     margin: 10px;
 }
 
-
-.logoiitimg{
-    height: 80px;
-    /* filter: invert(1); */
+.logoiitimg {
+    height: 80px; /* Restore original height */
 }
 
-.links{
+/* New wrapper to ensure logos stay next to each other */
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Navigation Links */
+.links {
     display: flex;
     justify-content: space-around;
     flex-grow: 0.5;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.links>div{
+.links>div {
     font-size: large;
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
 }
 
-.links>div:hover{
+.links>div:hover {
     background-color: rgba(82, 174, 255, 0.605);
 }
 
-.links>*:hover{
+.links>*:hover {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        padding-left: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Keep logos next to each other in mobile view */
+    .logos {
+        display: flex;
+        justify-content: center; /* Center logos in one line */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .logoccimg, .logoiitimg {
+        height: 60px; /* Restore original height for mobile */
+    }
+
+    /* Navigation links in a single row below logos */
+    .links {
+        display: flex;
+        justify-content: center; /* Center buttons horizontally */
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .links>div {
+        font-size: medium;
+        padding: 8px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .main{
+        padding-right: 0px;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center; /* Keep logos in one line */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .btBox {
+        align-items: center;
+        justify-content: center;
+        padding-left: 100%;
+    }
+
+    .bottomLogo {
+        display: block; /* Restore visibility for mobile */
+        width: 0; /* Set width to 0 */
+    }
+
+    .logoccimg {
+        height: 50px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        gap: 10px; /* Add spacing between buttons */
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 35px;
+    }
+
+    .links>div {
+        font-size: small;
+        padding: 6px;
+    }
+
+    .dropdown-button {
+        display: block; /* Show button only on mobile */
+        background-color: #01263e;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: medium;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .dropdown-menu.open {
+        display: flex; /* Show menu when open */
+    }
+
+    .dropdown-menu>div {
+        font-size: small;
+        padding: 6px;
+        text-align: center;
+        background-color: white;
+        color: #01263e;
+        border-radius: 5px;
+        width: 90%;
+    }
+
+    .dropdown-menu>div:hover {
+        background-color: rgba(82, 174, 255, 0.605);
+    }
 }

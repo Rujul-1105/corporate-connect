@@ -13,11 +13,12 @@ const Carousel = () => {
     >
       {/* Text Section */}
       <div className="bg-blue/10 backdrop-blur-md">
-      <div className='pt-5 pl-5 text-5xl text-center '>Corporate Connect 3.0</div>
+      <div className="heading">Corporate Connect 3.0</div>
       <div className="bg-blue/5 backdrop-blur-md">
       {/* <div className='pt-5 pl-5 text-5xl text-center bg2'>Corporate Connect 3.0</div> */}
         <div className="w-80% text-blue-950 p-3 justify-center flex flex-row items-center order-1 my-5">
-        <p className="text-xl leading-relaxed" style={{ textAlign: "justify" }}>
+          <div className='paraPara'>
+        <p className=" para " style={{ textAlign: "justify" }}>
             Corporate Connect is an industry-academia interaction event
             hosted by IIT Ropar that provides a platform to industry
             leaders, renowned academics, and ambitious students to
@@ -43,7 +44,7 @@ const Carousel = () => {
             evolving fusion of engineering fields. Join us and step into the
             future, where knowledge meets innovation and leadership is
             redefined.
-          </p>
+          </p></div>
         </div>
         {/* Glassmorphic Carousel Container */}
         <div className="max-w-8xl w-7xl p-6 rounded-xl order-2 m-auto">
@@ -62,56 +63,56 @@ const Carousel = () => {
               <img
                 src="/images/5.png"
                 alt="Slide 1"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/2.png"
                 alt="Slide 2"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/3.png"
                 alt="Slide 3"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/4.png"
                 alt="Slide 3"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/5.png"
                 alt="Slide 3"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/6.png"
                 alt="Slide 3"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/7.png"
                 alt="Slide 3"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className=" pic"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 src="/images/8.png"
                 alt="Slide 3"
-                className="w-7xl h-[500px] object-cover rounded-lg"
+                className="pic"
               />
             </SwiperSlide>
           </Swiper>

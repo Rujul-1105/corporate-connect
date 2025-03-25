@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-5 px-5">
       <div className='flex flex-row gap-60'>
-        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40vw]">
+        <div className="footerBox max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40vw]">
           <div>
             <img src={cdpc} alt="IIT Ropar Logo" className="w-52 mb-4 mt-5" />
             <h2 className="text-2xl font-bold text-white mb-2">CDPC,IIT Ropar</h2>

@@ -1,3 +1,173 @@
-.bg1{
-    background-color:rgb(218, 237, 255);
+.bg1 {
+    background-color: rgb(218, 237, 255);
+}
+
+.heading {
+    padding-top: 0; /* Removed top padding */
+    padding-left: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    /* width: 100px; */
+}
+
+.pic{
+    /*w-7xl h-[500px]  object-cover rounded-lg*/
+    width: 70vw;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.para{
+    font-size: 105%;
+    line-height: 1.6;
+}
+
+.paraPara {
+    font-size: larger;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Ensures the motion container is displayed as a flex container */
+.motion-container {
+    display: flex;
+}
+
+/* Each carousel item takes up its calculated width */
+.carousel-item {
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 2.5rem;
+        padding-top: 0; /* Removed top padding */
+        padding-left: 2rem;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+
+    .responsive-paragraph-container {
+        width: 90%; /* Adjust width for medium screens */
+        padding: 2rem; /* Add padding for spacing */
+    }
+
+    .responsive-paragraph {
+        font-size: 1.125rem; /* Slightly smaller font size */
+        line-height: 1.6; /* Adjust line spacing */
+    }
+
+    .para {
+        font-size: 1.125rem; /* Adjust font size for medium screens */
+        line-height: 1.6; /* Improve line spacing */
+        text-align: justify; /* Ensure justified text alignment */
+        padding: 1rem 2rem; /* Add padding for spacing */
+        width: 90%; /* Adjust width for medium screens */
+        margin: 0 auto; /* Center align */
+    }
+
+    .paraPara {
+        font-size: 1.125rem; /* Adjust font size for medium screens */
+        line-height: 1.6; /* Improve line spacing */
+        width: 50%; /* Adjust width for medium screens */
+        margin: 0 auto; /* Center align */
+        padding: 1rem 2rem; /* Add padding for spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+        padding-top: 0; /* Removed top padding */
+        padding-left: 1.5rem;
+    }
+
+    .carousel-item img {
+        height: 30vh;
+    }
+
+    .card-main {
+        width: 70vw;
+    }
+
+    .responsive-paragraph-container {
+        width: 95%; /* Further reduce width */
+        padding: 1.5rem;
+    }
+
+    .responsive-paragraph {
+        font-size: 1rem; /* Smaller font size for readability */
+        line-height: 1.5;
+    }
+
+    .para {
+        font-size: 1rem; /* Smaller font size for readability */
+        line-height: 1.5;
+        padding: 1rem 150rem; /* Adjust padding */
+        width: 95%; /* Further reduce width */
+        margin: 0 auto; /* Center align */
+    }
+
+    .paraPara {
+        font-size: 1rem; /* Smaller font size for readability */
+        line-height: 1.5;
+        width: 95%; /* Further reduce width */
+        margin: 0 auto; /* Center align */
+        padding: 1rem 1.5rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .para {
+        font-size: 0.875rem; /* Smallest font size for mobile */
+        line-height: 1.4;
+        text-align: justify;
+        padding: 0.5rem 1rem; /* Compact padding for small screens */
+        width: 100%; /* Full width for small screens */
+        margin: 0 auto; /* Center align */
+    }
+
+    .heading {
+        font-size: 2rem; /* Increased font size */
+        font-weight: bold; /* Made the text bold */
+        padding-top: 0; /* Removed top padding */
+        padding-left: 1rem;
+    }
+
+    .card-main {
+        width: 60vw;
+    }
+
+    .carousel-item img {
+        height: 20vh;
+    }
+
+    .responsive-paragraph-container {
+        width: 100%; /* Full width for small screens */
+        padding: 1rem;
+    }
+
+    .responsive-paragraph {
+        font-size: 0.875rem; /* Smallest font size for mobile */
+        line-height: 1.4;
+        text-align: justify; /* Ensure justified text alignment */
+    }
+
+    .paraPara {
+        font-size: 0.875rem; /* Smallest font size for mobile */
+        line-height: 1.4;
+        width: 100%; /* Full width for small screens */
+        margin: 0 auto; /* Center align */
+        padding: 0.5rem 1rem; /* Compact padding for small screens */
+    }
+    .pic {
+        width: 70vw; /* Full width for mobile screens */
+        height: 30vh; /* Maintain aspect ratio */
+    }
 }

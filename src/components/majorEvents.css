@@ -1,3 +1,20 @@
 .majorEventbg{
-    background-color:rgb(218, 238, 255)
+    background-color:rgb(218, 238, 255);
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .majorEventbg{
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
 }

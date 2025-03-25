@@ -21,7 +21,7 @@ import i10 from "../../public/images/backdrop_c1.png"
 const ConferenceWebsite = () => {
   return (
     <div className="font-sans">
-      <div className="grid grid-cols-3 gap-40 w-[60vw] m-auto mt-10 mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-4">
         <Link to="/visiting-profile1">
           <Vct pic={i1} c_name="RigBetel Labs" desig="Co-Founder and CEO" desc="RigBetel Labs is a leading robotics and automation company based in Pune, India." />
         </Link>
