@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import '../components/carousel.css';
+import "./CarouselCompany.css";
 
 const images = [
   { src: "./images/c1.png", alt: "Image 1" },
@@ -15,90 +15,82 @@ const images = [
   { src: "./images/c10.png", alt: "Image 10" },
 ];
 
-const Carousel = () => {
-  // Determine itemsPerPage based on window width:
-  // Mobile (<480px): 1 image per slide,
-  // Medium (<768px): 3 images per slide,
-  // Otherwise: 6 images per slide.
+const CarouselCompany = () => {
+  // Calculate images per slide based on window width.
   const getItemsPerPage = () => {
     if (window.innerWidth < 480) {
-      return 1;
+      return 1; // For small screens
     } else if (window.innerWidth < 768) {
-      return 3;
+      return 3; // For tablets
     } else {
-      return 6;
+      return 6; // For desktops
     }
   };
 
   const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage());
   const [index, setIndex] = useState(0);
 
-  // Update itemsPerPage on window resize.
+  // Update itemsPerPage on resize.
   useEffect(() => {
     const handleResize = () => {
       setItemsPerPage(getItemsPerPage());
-      setIndex(0); // Reset slide index on resize, if necessary.
+      setIndex(0);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Compute totalSlides based on itemsPerPage.
+  // Total slides based on images array.
   const totalSlides = images.length - itemsPerPage + 1;
-
-  // Memoize images array.
   const memoizedImages = useMemo(() => images, []);
 
+  // Auto-slide every 3 seconds.
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+      setIndex((prev) => (prev + 1) % totalSlides);
     }, 3000);
     return () => clearInterval(interval);
   }, [totalSlides]);
 
   return (
-    <div className="flex items-center justify-center overflow-hidden pt-10 pb-10">
-      <div className='flex flex-col'>
-        <div className='text-center text-4xl mb-4 font-bold'>
-          Previous Visitors
-        </div>
-        <div className="relative w-full max-w-[1400px] overflow-hidden">
-          <motion.div
-            className="flex"
-            animate={{ x: `-${index * (100 / itemsPerPage)}%` }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-            // keep full length of images
-            style={{
-              width: `${
-                window.innerWidth < 480
-                  ? (memoizedImages.length / itemsPerPage) * 150
-                  : (memoizedImages.length / itemsPerPage) * 100
-              }%`,
-              display: "flex",
-            }}
-          >
-            {memoizedImages.map((image) => (
-              <div
-                key={image.src}
-                className="carousel-item px-1"
-                style={{ flex: `0 0 ${100 / itemsPerPage}%` }}
-              >
-                <motion.img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-60 object-cover rounded-lg m-5"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 0.8 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.8 }}
-                />
-              </div>
-            ))}
-          </motion.div>
-        </div>
+    <div className="carousel-company">
+      <h2 className="carousel-heading">Previous Visitors</h2>
+      <div className="carousel-slider-wrapper">
+        <motion.div
+          className="carousel-slider"
+          animate={{ x: `-${index * (100 / itemsPerPage)}%` }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          style={{
+            width: `${(memoizedImages.length / itemsPerPage) * (window.innerWidth < 480 ? 10 : 100)}%`,
+          }}
+        >
+          {memoizedImages.map((image) => (
+            <div
+              key={image.src}
+              className="carousel-item"
+              style={{ flex: `0 0 ${100 / itemsPerPage}%` }}
+            >
+              <motion.img
+                src={image.src}
+                alt={image.alt}
+                className="carousel-img"
+                style={{
+                  width: window.innerWidth < 480 ? "80%" : "100%", // Smaller size for mobiles
+                  height: "auto",
+                  margin: "0 auto", // Center the image
+                  display: "block", // Ensure block-level for centering
+                }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.8 }}
+              />
+            </div>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
 };
 
-export default Carousel;
+export default CarouselCompany;

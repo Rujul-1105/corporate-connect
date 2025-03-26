@@ -37,6 +37,7 @@ const ProfessionalProfile = () => {
       {/* About Company Section */}
       <div className="flex flex-col md:flex-row items-center bg-white shadow-lg p-6 mt-6 w-full md:w-3/4 rounded-lg">
         {/* Image on the left */}
+
         <div className="w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden border-2 border-gray-500 shadow-lg mb-4 md:mb-0 md:mr-6">
         <img 
           src="/images/nxp_semiconductors_logo.jpg" 
@@ -46,7 +47,7 @@ const ProfessionalProfile = () => {
         </div>
         
         {/* Text on the right */}
-        <div className="text-left md:text-right w-full">
+        <div className="text-left w-full">
           <h2 
             className="text-3xl md:text-5xl mb-4 md:mb-8" 
             style={{ fontFamily: "Times New Roman, serif" }}

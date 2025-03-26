@@ -46,7 +46,7 @@ const ProfessionalProfile = () => {
 </div>
         
         {/* Text on the right */}
-        <div className="text-left md:text-right w-full">
+        <div className="text-left w-full">
           <h2 
             className="text-3xl md:text-5xl mb-4 md:mb-8" 
             style={{ fontFamily: "Times New Roman, serif" }}

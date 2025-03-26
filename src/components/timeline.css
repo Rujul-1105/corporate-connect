@@ -1,0 +1,121 @@
+/* Root container spans full width */
+.timeline-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 2rem 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Dark overlay covering entire container */
+  .timeline-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  /* Content wrapper centers inner content but allows background to extend */
+  .timeline-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Heading style */
+  .timeline-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  /* Timeline grid with centered items */
+  .timeline-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  /* Responsive grid breakpoints */
+  @media (min-width: 768px) {
+    .timeline-grid {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .timeline-grid {
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+    }
+  }
+  
+  /* Timeline card styling */
+  .timeline-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .timeline-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon container */
+  .timeline-card-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    background-color: #2563eb; /* blue-600 */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title and description styling */
+  .timeline-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-card-description {
+    font-size: 0.875rem;
+    color: #4b5563; /* gray-700 */
+  }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 480px) {
+    .timeline-heading {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .timeline-card {
+      padding: 1rem;
+      max-width: 90%;
+    }
+    .timeline-card-title {
+      font-size: 1rem;
+    }
+    .timeline-card-description {
+      font-size: 0.75rem;
+    }
+  }
+  
