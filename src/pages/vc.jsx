@@ -7,10 +7,10 @@ import Slideshow from "../components/CarouselCompany";
 import Vct from "../components/vct";
 import { Link } from "react-router-dom";
 import i1 from "../assets/vc-images/PallaviSaha.jpg"
-import i2 from "../assets/vc-images/mehul-gupta.jpg"
+import i2 from "../../public/images/SurjyaMahapotra.jpeg"
 import i3 from "../assets/vc-images/mitali.jpg"
 import i4 from "../assets/vc-images/Yadav.jpg"
-import i5 from  "../../public/images/backdrop_c1.png"
+import i5 from  "../../public/images/Deepanshu_Grover.jpeg"
 import i6 from "../../public/images/backdrop_c1.png"
 import i7 from "../../public/images/backdrop_c1.png"
 import i8 from "../../public/images/backdrop_c1.png"
@@ -26,7 +26,7 @@ const ConferenceWebsite = () => {
           <Vct pic={i1} c_name="RigBetel Labs" desig="Co-Founder and CEO" desc="RigBetel Labs is a leading robotics and automation company based in Pune, India." />
         </Link>
         <Link to="/visiting-profile2">
-          <Vct pic={i2} c_name="PwC India" desig="Director" desc="PwC India is a professional services firm offering services in assurance, advisory and tax to clients..." />
+          <Vct pic={i2} c_name="Standard Chartered Bank" desig="Vice President" desc="Standard Chartered is a British multinational bank operating in over 60 countries in Asia,Africa and the Middle East." />
         </Link>
         <Link to="/visiting-profile3">
           <Vct pic={i3} c_name="Commonwealth Bank" desig="Assistant Vice President - Data Science" desc="Commonwealth Bank is a major financial institution providing a wide range of financial services." />
@@ -35,7 +35,7 @@ const ConferenceWebsite = () => {
           <Vct pic={i4} c_name="NXP Semiconductors" desig="Head of the India Innovation Ecosystem" desc="NXP Semiconductors is a global leader in secure connectivity solutions for embedded applications." />
         </Link>
         <Link to="/visiting-profile5">
-          <Vct pic={i5} c_name="will be updated soon" desig="" desc=""/>
+          <Vct pic={i5} c_name="Harness" desig=" Director of Customer Experience Engineering" desc="Harness is a modern Continuous Delivery-as-a-Service platform that simplifies the deployment of software using AI/ML-driven automation."/>
         </Link>
         <Link to="/visiting-profile6">
           <Vct pic={i6} c_name="will be updated soon" desig="" desc=""/>
